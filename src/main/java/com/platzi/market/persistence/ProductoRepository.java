@@ -5,6 +5,7 @@ import com.platzi.market.domain.repository.ProductRepository;
 import com.platzi.market.persistence.crud.ProductoCrudRepository;
 import com.platzi.market.persistence.entity.Producto;
 import com.platzi.market.persistence.mapper.ProductMapper;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
@@ -12,7 +13,9 @@ import java.util.Optional;
 
 @Repository //esta anotacion se escribe para indicar a Srping que esta clase interactua con la DB, tambien se puede poner @Component que es similar pero generalizado
 public class ProductoRepository implements ProductRepository {
+    @Autowired //con esta notacion SPRING toma el control de los objetos para inicializarlos con new
     private ProductoCrudRepository productoCrudRepository;
+    @Autowired
     private ProductMapper mapper;
 
     @Override

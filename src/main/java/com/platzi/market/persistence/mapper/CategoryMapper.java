@@ -19,6 +19,6 @@ public interface CategoryMapper {
     //Conversion externa, al reves
     @InheritInverseConfiguration //nos permite espcificar que solo debe hacer el inverso del que ya se tiene
     @Mapping(target = "productos", ignore = true) // va a ignorar el atributo productos
-    Categoria toCategory(Category category);
+    Categoria toCategoria(Category category);
 
 }

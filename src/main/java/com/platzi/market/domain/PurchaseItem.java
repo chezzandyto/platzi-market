@@ -3,7 +3,7 @@ package com.platzi.market.domain;
 public class PurchaseItem {
     private int productId;
     private int quantity;
-    private double total;
+    private float total;
     private boolean active;
 
     public int getProductId() {
@@ -22,11 +22,11 @@ public class PurchaseItem {
         this.quantity = quantity;
     }
 
-    public double getTotal() {
+    public float getTotal() {
         return total;
     }
 
-    public void setTotal(double total) {
+    public void setTotal(float total) {
         this.total = total;
     }
 

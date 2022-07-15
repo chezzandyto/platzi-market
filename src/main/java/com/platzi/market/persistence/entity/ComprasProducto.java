@@ -21,7 +21,7 @@ public class ComprasProducto {
     private Compra compra;
 
     @ManyToOne
-    @JoinColumn(name = "id_producto,", insertable = false, updatable = false)
+    @JoinColumn(name = "id_producto", insertable = false, updatable = false)
     private Producto producto;
 
     public ComprasProductoPK getId() {
